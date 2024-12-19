@@ -1,0 +1,49 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora DF</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+    <!--pantalla donde se muestra los valores-->
+    <div class="calculadora">
+        <input type="text" class="display" id="display" disabled placeholder="0">
+        <!--botones de los numeros de la calculadora y las opraciones que va a realizar-->
+        <div class="buttons">
+            <button onclick="escribir('7')">7</button>
+            <button onclick="escribir('8')">8</button>
+            <button onclick="escribir('9')">9</button>
+            <button class="operator" onclick="escribir('/')">/</button>
+
+
+            <button onclick="escribir('4')">4</button>
+            <button onclick="escribir('5')">5</button>
+            <button onclick="escribir('6')">6</button>
+            <button class="operator" onclick="escribir('*')">*</button>
+
+            <button onclick="escribir('1')">1</button>
+            <button onclick="escribir('2')">2</button>
+            <button onclick="escribir('3')">3</button>
+            <button class="operator" onclick="escribir('-')">-</button>
+
+            <button onclick="escribir('0')">0</button>
+            <!--boton para borrar en la pantalla-->
+            <button onclick="escribir('.')">.</button>
+            <button class="clear" onclick="clearDisplay()">DEL</button>
+            <button class="operator" onclick="escribir('+')">+</button>
+            <!--boton para realizar la operacion y mostrar el resultado-->
+            <button class="borrar" onclick="borrar()" style="grid-column: span 2;">🢘</button>
+            <button class="igual" onclick="calcular()" style="grid-column: span 2;">=</button>
+
+
+        </div>
+    </div>
+    <script src="Script2.js"></script>
+   
+
+
+
+</body>
+</html>
